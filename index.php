@@ -8,16 +8,16 @@
  	<body>
 
 		<!-- met cette pagge le temps que la page ce charge -->
-			<!-- <div class="loader" id="loader">
-				<div class="blobs">
-				  <div class="blob"></div>
-				  <div class="blob"></div>
-				  <div class="blob"></div>
-					<div class="blob">Chargement</div>
+			<!-- <div class="bl-loader" id="loader">
+				<div class="bl-blobs">
+				  <div class="bl-blob"></div>
+				  <div class="bl-blob"></div>
+				  <div class="bl-blob"></div>
+					<div class="bl-blob">Chargement</div>
 				</div>
 			</div> -->
 			<!-- effet de vague a la fin du loader -->
-			<!-- <svg version="1.1" class="vague" id="vague" viewBox="0 0 700 170" preserveAspectRation="none">
+			<!-- <svg version="1.1" class="bl-vague" id="vague" viewBox="0 0 700 170" preserveAspectRation="none">
 					<path d="M 0,0 0,100 C 0,80 224,50 350,90 475,150 700,100 700,100 L 700,0 Z"
 					data-to="M 0,0 0,100 C 0,100 224,100 350,100 475,100 700,100 700,100 L 700,0 Z"/>
 			</svg> -->
@@ -33,14 +33,17 @@
 
 
 			<!-- debut du site web -->
-		<div class="content">
+			<nav class="bl-nav">
+
+			</nav>
+		<div class="bl-content">
 
 			<h1>Bublello php and css framework</h1>
 
 <!-- text -->
 			<article>
 				<h2> text</h2>
-				class="z-depth-0 shadow-demo"
+				class="bl-z-depth-0 shadow-demo"
 				<p>
 					ext ever szince the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets cont
 					xt ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets cont
@@ -52,24 +55,24 @@
 				<h2>Ombre</h2>
 				<p>
 					Dans le material design, toute chose devrait avoir un certain index de profondeur (z) déterminant à quelle hauteur se trouver l'élément par rapport à la page.
-					<br />Pour cela il vous suffit de rajouter <code>class="z-depth-x"</code> ou x est un entier compris entre 0 et 5 compris. <code>class="z-depth-0"</code> peut etre utilisé pour enlever les ombres par default.
+					<br />Pour cela il vous suffit de rajouter <code>class="bl-z-depth-x"</code> ou x est un entier compris entre 0 et 5 compris. <code>class="bl-z-depth-0"</code> peut etre utilisé pour enlever les ombres par default.
 				</p>
-				<p class="z-depth-0 shadow-demo">z-depth-0</p><p class="z-depth-1 shadow-demo">z-depth-1</p><p class="z-depth-2 shadow-demo">z-depth-2</p><p class="z-depth-3 shadow-demo">z-depth-3</p><p class="z-depth-4 shadow-demo">z-depth-4</p><p class="z-depth-5 shadow-demo">z-depth-5</p>
+				<p class="bl-z-depth-0 bl-shadow-demo">z-depth-0</p><p class="bl-z-depth-1 bl-shadow-demo">z-depth-1</p><p class="bl-z-depth-2 bl-shadow-demo">z-depth-2</p><p class="bl-z-depth-3 bl-shadow-demo">z-depth-3</p><p class="bl-z-depth-4 bl-shadow-demo">z-depth-4</p><p class="bl-z-depth-5 bl-shadow-demo">z-depth-5</p>
 
 			</article>
 <!-- code -->
 			<article>
 			<h2> code</h2>
 			<p>On peut insérer facilement du code en grosse partie:</p>
-				<textarea class="code" disabled>
+				<textarea class="bl-code" disabled>
 
 					'votre gros code'
 
 				</textarea>
 				<p>Soit des petits mots a ajouter directement dans du texte:</p>
 				<code> 'votre petit bout de code' </code><br /><br />
-				<textarea class="code" disabled>
-	<textarea class="code" disabled>
+				<textarea class="bl-code" disabled>
+	<textarea class="bl-code" disabled>
 
 		'votre gros code'
 
@@ -105,7 +108,7 @@
 						</tr>
 					</tbody>
 				</table><br />
-				<textarea class="code" disabled>
+				<textarea class="bl-code" disabled>
 	<table>
 		<thead>
 			<tr>
@@ -130,8 +133,8 @@
 	</table>
 				</textarea>
 				<h3>Tableau à bordure</h3>
-				<p>Ajoutez <code>class="bordered"</code> pour ajouter des bordures</p>
-				<table class="bordered">
+				<p>Ajoutez <code>class="bl-bordered"</code> pour ajouter des bordures</p>
+				<table class="bl-bordered">
 					<thead>
 						<tr>
 							<th>Nom</th>
@@ -155,8 +158,8 @@
 				</table>
 
 			<h3>Tableau rayé</h3>
-			<p>Ajoutez <code>class="striped"</code> pour avoir une ligne sur deux grisé.</p>
-			<table class="striped">
+			<p>Ajoutez <code>class="bl-striped"</code> pour avoir une ligne sur deux grisé.</p>
+			<table class="bl-striped">
 				<thead>
 					<tr>
 						<th>Nom</th>
@@ -180,8 +183,8 @@
 			</table>
 
 			<h3>Tableau rayé réactif</h3>
-			<p>Ajoutez <code>class="highlight"</code> pour avoir une ligne lorsque l'on passe par dessus.</p>
-			<table class="highlight">
+			<p>Ajoutez <code>class="bl-highlight"</code> pour avoir une ligne lorsque l'on passe par dessus.</p>
+			<table class="bl-highlight">
 				<thead>
 					<tr>
 						<th>Nom</th>
@@ -205,8 +208,8 @@
 			</table>
 
 			<h3>Tableau centré</h3>
-			<p>Ajoutez <code>class="centered"</code> pour aligner tout le texte en centré.</p>
-			<table class="centered">
+			<p>Ajoutez <code>class="bl-centered"</code> pour aligner tout le texte en centré.</p>
+			<table class="bl-centered">
 				<thead>
 					<tr>
 						<th>Nom</th>
@@ -234,74 +237,74 @@
 <!-- radio -->
 			<article>
 				<h2> radio</h2>
-				<div class="radio">
+				<div class="bl-radio">
 					<input type="radio" id="checkOui" value="oui" name="check" checked>
 					<label for="checkOui">radio base</label>
-					<div class="check"></div>
+					<div class="bl-check"></div>
 				</div>
-				<div class="radio classic">
+				<div class="bl-radio bl-classic">
 					<input type="radio" id="checkNon" value="non" name="check">
 					<label for="checkNon">radio classique</label>
-					<div class="check"></div>
+					<div class="bl-check"></div>
 				</div>
-				<textarea class="code" disabled>
-	<div class="radio">
+				<textarea class="bl-code" disabled>
+	<div class="bl-radio">
 		<input type="radio" id="checkOui" value="oui" name="check" checked>
 		<label for="checkOui">radio de base</label>
-		<div class="check"></div>
+		<div class="bl-check"></div>
 	</div>
 
-	<div class="radio classic">
+	<div class="bl-radio bl-classic">
 		<input type="radio" id="checkNon" value="non" name="check">
 		<label for="checkNon">radio classique</label>
-		<div class="check"></div>
+		<div class="bl-check"></div>
 	</div>
 				</textarea>
 			</article>
 <!-- check box -->
 			<article>
 				<h2> check box</h2>
-				<div class='checkbox'>
+				<div class='bl-checkbox'>
 					<input type='checkbox' id='CheckTest' name='CheckTest' >
 					<label for='CheckTest'>Check box de base</label>
-					<div class='check'></div>
+					<div class='bl-check'></div>
 				</div>
 
 
 
-				<textarea class="code" disabled>
-	<div class='checkbox'>
+				<textarea class="bl-code" disabled>
+	<div class='bl-checkbox'>
 		<input type='checkbox' id='CheckTest' name='CheckTest' >
 		<label for='CheckTest'>Check box de base</label>
-		<div class='check'></div>
+		<div class='bl-check'></div>
 	</div>
 				</textarea>
 			</article>
 <!-- select -->
 			<article>
 				<h2> select</h2>
-				<select name="select" class="custom-select bubble" placeholder="Select de base">
+				<select name="select" class="bl-custom-select bl-bubble" placeholder="Select de base">
 					<option value="option 1">option 1 qui est courte</option>
 					<option value="option 2">option 2 qui est plus longue</option>
 					<option value="option 3">option 3</option>
 					<option value="option 4">option 4</option>
 				</select>
-				<select name="select" class="custom-select classic" placeholder="Select classique">
+				<select name="select" class="bl-custom-select bl-classic" placeholder="Select classique">
 					<option value="option 1">option 1 qui est courte</option>
 					<option value="option 2">option 2 qui est plus longue</option>
 					<option value="option 3">option 3</option>
 					<option value="option 4">option 4</option>
 				</select>
 
-				<textarea class="code" disabled>
-	<select name="select" class="custom-select bubble" placeholder="Select de base">
+				<textarea class="bl-code" disabled>
+	<select name="select" class="bl-custom-select bl-bubble" placeholder="Select de base">
 		<option value="option 1">option 1 qui est courte</option>
 		<option value="option 2">option 2 qui est plus longue</option>
 		<option value="option 3">option 3</option>
 		<option value="option 4">option 4</option>
 	</select>
 
-	<select name="select" class="custom-select classic" placeholder="Select classique">
+	<select name="select" class="bl-custom-select bl-classic" placeholder="Select classique">
 		<option value="option 1">option 1 qui est courte</option>
 		<option value="option 2">option 2 qui est plus longue</option>
 		<option value="option 3">option 3</option>
@@ -313,11 +316,11 @@
 <!-- images responsive -->
 			<article>
 				<h2> image</h2>
-				<div id="imgTest" class="img parallax" data-image-src="pictures/test1.jpg" data-image-height="50vh"></div>
+				<div id="imgTest" class="bl-img bl-parallax" data-image-src="pictures/test1.jpg" data-image-height="50vh"></div>
 				<p>Ces divs ont par default un min-heigt de 200px et la largeur de leurs parent mais vous pouvez changer leurs dimensions
 				a bonne essient! Le code de base pour afficher une image responsive est:</p>
-				<textarea class="code" disabled>
-<div class="img" class="'your options'" data-image-src="path_to_image/image.jpg"></div>
+				<textarea class="bl-code" disabled>
+<div class="bl-img" class="'your options'" data-image-src="path_to_image/image.jpg"></div>
 				</textarea>
 				Quelques options que vous pouvez fusioner a ajouter dans la balise img. <br /><br />
 				<table class="highlight bordered">
@@ -329,11 +332,11 @@
 	        </thead>
 	        <tbody>
 	          <tr>
-							<td><code>class="grayscale"</code></td>
+							<td><code>class="bl-grayscale"</code></td>
 	            <td>image en noir et blanc</td>
 	          </tr>
 	          <tr>
-							<td><code>class="parallax"</code></td>
+							<td><code>class="bl-parallax"</code></td>
 	            <td>image avec un effet paralax</td>
 	          </tr>
 						<tr>
