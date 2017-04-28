@@ -18,7 +18,7 @@
 /*//////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////// A SUPRIMER!!!!!! ////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////*/
-.shadow-demo {
+.bl-shadow-demo {
     background-color: var(--title-text-color);
     color: var(--main-bg-color);
     width: 100px;
@@ -43,7 +43,7 @@ body, html{
   background-color: var(--main-bg-color);
 }
 
-.content{
+.bl-content{
   width: 1024px;
   margin: 0 auto;
 }
@@ -121,7 +121,7 @@ h5{
 ////////////////////////////////// ARTICLE ///// //////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////*/
 
-article{
+.bl-article{
   display: block;
   margin: 40px 0;
   padding: 20px;
@@ -129,7 +129,7 @@ article{
   text-align: justify;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
 }
- article:after{
+ .bl-article:after{
   content: '';
   display: block;
   height: 0px;
@@ -152,7 +152,7 @@ article{
   z-index: 999;
 }
 
-.blobs {
+.bl-blobs {
   filter: url("#goo");
   position: absolute;
   top: 60vh;
@@ -212,7 +212,7 @@ article{
     transform: scale(0) translate(0, -240vh);
   }
 }
-.blob {
+.bl-blob {
   position: absolute;
   font-family: 'Gloria Hallelujah', cursive;
   background: var(--main-bg-color);
@@ -230,23 +230,23 @@ article{
   margin-left: -50px;
   animation: cubic-bezier(0.77, 0, 0.175, 1) 5s infinite;
 }
-.blob:nth-child(1) {
+.bl-blob:nth-child(1) {
   width: 100px;
   height: 100px;
   animation-name: blop1;
 }
-.blob:nth-child(2) {
+.bl-blob:nth-child(2) {
   width: 150px;
   height: 150px;
   animation-name: blop2;
 }
-.blob:nth-child(3) {
+.bl-blob:nth-child(3) {
   width: 200px;
   height: 200px;
   animation-name: blop3;
 }
 
-.vague{
+.bl-vague{
   width: 100%;
   height: 100%;
   left: 0;
@@ -262,11 +262,11 @@ article{
 ///////////////////////////////////////////////////////////////////////////////////////*/
 
 /*selects customs par default*/
-.custom-select-wrapper select {
+.bl-custom-select-wrapper select {
   display: none;
 }
 
-.custom-select-wrapper {
+.bl-custom-select-wrapper {
   position:static ;
   user-select: none;
   padding: 15px;
@@ -275,7 +275,7 @@ article{
   float: left;
 }
 
-.custom-select-trigger {
+.bl-custom-select-trigger {
   position: absolute;
   display: block;
   z-index: 15;
@@ -284,12 +284,12 @@ article{
   cursor: pointer;
 }
 /*buble select*/
-.bubble.custom-select {
+.bl-bubble.bl-custom-select {
   filter: url("#goo");
   position: absolute;
   user-select: none;
 }
-.bubble .custom-select-trigger {
+.bl-bubble .bl-custom-select-trigger {
   position: absolute;
   background: var(--title-text-color);
   color: var(--main-bg-color);
@@ -301,7 +301,7 @@ article{
   background: var(--title-text-color);
   transform: scale(1.01);
 }
-.bubble .custom-select-trigger:after {
+.bl-bubble .bl-custom-select-trigger:after {
   content: "";
   display: block;
   position: absolute;
@@ -313,11 +313,11 @@ article{
   top: 10px; right: 10px;
   transition: all .4s;
 }
-.bubble.custom-select.opened .custom-select-trigger:after{
+.bl-bubble.bl-custom-select.bl-opened .bl-custom-select-trigger:after{
   transform: rotateZ(225deg);
   top: 15px;
 }
-.bubble .custom-options {
+.bl-bubble .bl-custom-options {
   position: relative;
   background: var(--title-text-color);
   color: var(--main-bg-color);
@@ -330,11 +330,11 @@ article{
   pointer-events: none;
   max-height: 0px;
 }
-.bubble.custom-select.opened .custom-options {
+.bl-bubble.bl-custom-select.bl-opened .bl-custom-options {
   pointer-events: all;
   max-height: 300px;
 }
-.bubble .custom-option {
+.bl-bubble .bl-custom-option {
   color: var(--main-bg-color);
   text-align: left;
   padding: 0 8px 0 15px;
@@ -345,7 +345,7 @@ article{
   white-space: nowrap;
   z-index: 25;
 }
-.bubble .custom-option:last-child {
+.bl-bubble .bl-custom-option:last-child {
   padding: 0 8px 5px 15px;
 }
 
@@ -368,11 +368,11 @@ article{
   }
 }
 
-.classic.custom-select {
+.bl-classic.bl-custom-select {
   position: absolute;
   display: inline-block;
 }
-.classic .custom-select-trigger {
+.bl-classic .bl-custom-select-trigger {
   position: relative;
   padding-left: 20px;
   color: var(--title-text-color);
@@ -380,11 +380,11 @@ article{
   border: 1px solid var(--title-text-color);
   transition: border 0s .3s;
 }
-.classic.custom-select.opened .custom-select-trigger {
+.bl-classic.bl-custom-select.bl-opened .bl-custom-select-trigger {
   z-index: 30;
   border-bottom: 0;
 }
-.classic .custom-options {
+.bl-classic .bl-custom-options {
   position: relative;
   min-width: 252px;
   border: 1px solid var(--title-text-color);
@@ -399,7 +399,7 @@ article{
   display: block;
   visibility: hidden;
 }
-.classic .custom-select-trigger:after {
+.bl-classic .bl-custom-select-trigger:after {
   content: "";
   display: block;
   position: absolute;
@@ -411,20 +411,20 @@ article{
   top: 10px; right: 10px;
   transition: all .4s;
 }
-.classic.custom-select.opened .custom-select-trigger:after{
+.bl-classic.bl-custom-select.bl-opened .bl-custom-select-trigger:after{
   transform: rotateZ(225deg);
   top: 15px;
 }
-.classic.custom-select.opened .custom-options {
+.bl-classic.bl-custom-select.bl-opened .bl-custom-options {
   pointer-events: all;
   visibility:visible;
   max-height: 500px;
   animation: elasticSelect .6s;
 }
-.classic .custom-option:first-child {
+.bl-classic .bl-custom-option:first-child {
   margin-top: 10px;
 }
-.classic .custom-option {
+.bl-classic .bl-custom-option {
   position: relative;
   display: block;
   opacity: 0;
@@ -436,7 +436,7 @@ article{
   z-index: 25;
   transition: all .4s ease-in-out;
 }
-.classic.custom-select.opened .custom-option {
+.bl-classic.bl-custom-select.bl-opened .bl-custom-option {
   opacity: 1;
 }
 
@@ -444,21 +444,21 @@ article{
 /*//////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////// IMG BACKROUND //////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////*/
-.img{
+.bl-img{
   width: 100%;
   min-height: 200px;
   background: transparent;
   background-size: cover;
   display: block;
 }
-.img.grayscale{
+.bl-img.bl-grayscale{
   filter: grayscale(100%);
 }
 /*//////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////// AFFICHER CODE //////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////*/
 
-.code, code{
+.bl-code, code{
   margin: 20px 0;
   border-radius: 10px;
   padding: 20px;
@@ -472,7 +472,7 @@ article{
   border: none;
   resize: none;
 }
-.code:focus{
+.bl-code:focus{
 	outline: none;
 }
 code{
@@ -484,59 +484,59 @@ code{
 /*//////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////// TABLE //////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////*/
-table{
+.bl-table{
   width: 100%;
   border-collapse:collapse;
   overflow: hidden;
 }
-th{
+.bl-table th{
   border-bottom: 1px solid var(--main-text-color);
   padding: 15px;
   font-weight: bold;
   background-color: rgba(96, 125, 139, 0.2);
 }
-td{
+.bl-table td{
   padding: 15px;
 }
 
 /*colore une ligne sur 2*/
-table.striped tr:nth-child(odd){
+.bl-table.bl-striped tr:nth-child(odd){
   background-color:rgba(96, 125, 139, 0.1);
 }
 
 /*borduré*/
-table.bordered tr{
+.bl-table.bl-bordered tr{
   border-bottom: 1px solid var(--main-text-color);
 }
-table.bordered tr:last-child{
+.bl-table.bl-bordered tr:last-child{
   border-bottom: none;
 }
 
 /*ce grise lorsqu'on passe par dessus*/
-table.highlight tr:hover{
+.bl-table.bl-highlight tr:hover{
   background-color:rgba(96, 125, 139, 0.1);
 }
 
 /*text ce centre*/
-table.centered tr{
+.bl-table.bl-centered tr{
   text-align: center;
 }
 /*//////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////// CHECK BOX //////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////*/
-.checkbox{
+.bl-checkbox{
  display: block;
  position: relative;
  float: left;
  height: 54px;
 }
 
-.checkbox input[type=checkbox]{
+.bl-checkbox input[type=checkbox]{
  position: absolute;
  visibility: hidden;
 }
 
-.checkbox label{
+.bl-checkbox label{
  display: block;
  position: relative;
  padding: 15px 25px 15px 60px;
@@ -547,7 +547,7 @@ table.centered tr{
 }
 
 
-.checkbox .check{
+.bl-checkbox .bl-check{
  display: block;
  position: absolute;
  border: 2px solid var(--title-text-color);
@@ -560,7 +560,7 @@ table.centered tr{
  border-radius: 3px;
 }
 
-.checkbox .check::before {
+.bl-checkbox .bl-check::before {
  display: block;
  position: absolute;
  content: '';
@@ -576,7 +576,7 @@ table.centered tr{
  transition: all .15s linear;
 }
 
-input[type=checkbox]:checked ~ .check::before{
+input[type=checkbox]:checked ~ .bl-check::before{
   transform: rotate(30deg);
   border-width: 0 3px 3px 0;
   top: -2px;
@@ -610,19 +610,19 @@ input[type=checkbox]:checked ~ .check::before{
   }
 }
 
-.radio{
+.bl-radio{
  display: block;
  position: relative;
  width: 54px;
  height: 54px;
 }
 
-.radio input[type=radio]{
+.bl-radio input[type=radio]{
  position: absolute;
  visibility: hidden;
 }
 
-.radio label{
+.bl-radio label{
   position: relative;
  display:block;
  padding: 15px 25px 15px 60px;
@@ -634,7 +634,7 @@ input[type=checkbox]:checked ~ .check::before{
 }
 
 
-.radio .check{
+.bl-radio .bl-check{
  display: block;
  position: absolute;
  border: 2px solid #AAAAAA;
@@ -647,7 +647,7 @@ input[type=checkbox]:checked ~ .check::before{
  transition: all .2s ;
 }
 
-.radio .check::before {
+.bl-radio .bl-check::before {
  background: transparent;
  display: block;
  position: absolute;
@@ -660,11 +660,11 @@ input[type=checkbox]:checked ~ .check::before{
  margin: auto;
 }
 
-input[type=radio]:checked ~ .check {
+input[type=radio]:checked ~ .bl-check {
  border: 2px solid transparent;
 }
 
-input[type=radio]:checked ~ .check::before{
+input[type=radio]:checked ~ .bl-check::before{
   background-color: var(--title-text-color);
   transform: scale(10);
   border-radius: 100%;
@@ -673,19 +673,19 @@ input[type=radio]:checked ~ .check::before{
 
 /*radio classic*/
 
-.radio.classic .check{
+.bl-radio.bl-classic .bl-check{
  transition: all .4s ;
 }
 
-.radio.classic .check::before {
+.bl-radio.bl-classic .bl-check::before {
   transition: all .2s ;
 }
 
-.classic input[type=radio]:checked ~ .check {
+.bl-classic input[type=radio]:checked ~ .bl-check {
  border: 2px solid var(--title-text-color);
 }
 
-.classic input[type=radio]:checked ~ .check::before{
+.bl-classic input[type=radio]:checked ~ .bl-check::before{
   transform: none;
   border-radius: 100%;
   height: 11px;
@@ -698,22 +698,22 @@ input[type=radio]:checked ~ .check::before{
 /*//////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////// PROFONDEUR D'OMBRE //////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////*/
-.z-depth-0{
+.bl-z-depth-0{
   box-shadow: none !important;
 }
-.z-depth-1 {
+.bl-z-depth-1 {
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
 }
-.z-depth-2 {
+.bl-z-depth-2 {
   box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.3);
 }
-.z-depth-3 {
+.bl-z-depth-3 {
     box-shadow: 0 6px 10px 0 rgba(0,0,0,0.14), 0 1px 18px 0 rgba(0,0,0,0.12), 0 3px 5px -1px rgba(0,0,0,0.3);
 }
-.z-depth-4 {
+.bl-z-depth-4 {
     box-shadow: 0 8px 10px 1px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.3);
 }
-.z-depth-5 {
+.bl-z-depth-5 {
     box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14), 0 6px 30px 5px rgba(0,0,0,0.12), 0 8px 10px -5px rgba(0,0,0,0.3);
 }
 
@@ -721,7 +721,7 @@ input[type=radio]:checked ~ .check::before{
 //////////////////////////// VERSION PORTABLE ET TABLETTE //////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////*/
 @media all and (max-width: 1024px) {
-  .content{
+  .bl-content{
     max-width: calc(100vw - 5px)
   }
 
