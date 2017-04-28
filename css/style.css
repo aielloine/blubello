@@ -18,7 +18,7 @@
 /*//////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////// A SUPRIMER!!!!!! ////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////*/
-.shadow-demo {
+.bl-shadow-demo {
     background-color: var(--title-text-color);
     color: var(--main-bg-color);
     width: 100px;
@@ -121,7 +121,7 @@ h5{
 ////////////////////////////////// ARTICLE ///// //////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////*/
 
-article{
+.bl-article{
   display: block;
   margin: 40px 0;
   padding: 20px;
@@ -129,7 +129,7 @@ article{
   text-align: justify;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
 }
- article:after{
+ .bl-article:after{
   content: '';
   display: block;
   height: 0px;
@@ -212,7 +212,7 @@ article{
     transform: scale(0) translate(0, -240vh);
   }
 }
-.blob {
+.bl-blob {
   position: absolute;
   font-family: 'Gloria Hallelujah', cursive;
   background: var(--main-bg-color);
@@ -484,41 +484,41 @@ code{
 /*//////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////// TABLE //////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////*/
-table{
+.bl-table{
   width: 100%;
   border-collapse:collapse;
   overflow: hidden;
 }
-th{
+.bl-table th{
   border-bottom: 1px solid var(--main-text-color);
   padding: 15px;
   font-weight: bold;
   background-color: rgba(96, 125, 139, 0.2);
 }
-td{
+.bl-table td{
   padding: 15px;
 }
 
 /*colore une ligne sur 2*/
-table.bl-striped tr:nth-child(odd){
+.bl-table.bl-striped tr:nth-child(odd){
   background-color:rgba(96, 125, 139, 0.1);
 }
 
 /*borduré*/
-table.bl-bordered tr{
+.bl-table.bl-bordered tr{
   border-bottom: 1px solid var(--main-text-color);
 }
-table.bl-bordered tr:last-child{
+.bl-table.bl-bordered tr:last-child{
   border-bottom: none;
 }
 
 /*ce grise lorsqu'on passe par dessus*/
-table.bl-highlight tr:hover{
+.bl-table.bl-highlight tr:hover{
   background-color:rgba(96, 125, 139, 0.1);
 }
 
 /*text ce centre*/
-table.bl-centered tr{
+.bl-table.bl-centered tr{
   text-align: center;
 }
 /*//////////////////////////////////////////////////////////////////////////////////////
