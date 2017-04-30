@@ -382,6 +382,14 @@
 
 			</article>
 
+			<!-- input -->
+						<article>
+							<h2>Input</h2>
+
+							<input class="bu-classic" type="text" name="name"><br/>
+							<textarea class="code" disabled><input class="bu-classic" type="text" name="name"></textarea>
+
+						</article>
 		</div>
 
 
