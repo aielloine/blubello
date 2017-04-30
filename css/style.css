@@ -291,8 +291,8 @@ nav {
   background: var(--title-text-color);
   height: auto;
 }
-nav ul {
 
+nav ul {
   filter: url("#goo");
   margin:0;
   padding:0;
