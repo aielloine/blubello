@@ -33,6 +33,9 @@
 
 
 			<!-- debut du site web -->
+
+
+			<!-- contenu de tout le site -->
 		<div class="content">
 
 			<h1>Bublello php and css framework</h1>
@@ -78,6 +81,8 @@
 	<code> 'votre petit bout de code' </code>
 				</textarea>
 			</article>
+
+
 <!-- table -->
 			<article>
 				<h2> tableau</h2>
@@ -342,6 +347,39 @@
 	          </tr>
 	        </tbody>
 	      </table>
+			</article>
+			<!-- menu -->
+			<article>
+				<h2> menu</h2>
+				<nav>
+					<ul>
+						<li><a href="#">Item 1</a></li>
+						<li><a href="#">Item 2</a>
+							<ul>
+								<li><a href="#">Sous-item 1</a></li>
+								<li><a href="#">Sous-item 2</a></li>
+								<li><a href="#">Sous-item 3</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Item 3</a></li>
+					</ul>
+				</nav>
+				<textarea class="code" disabled>
+	<nav>
+		<ul>
+			<li><a href="#">Item 1</a></li>
+			<li><a href="#">Item 2</a>
+				<ul>
+					<li><a href="#">Sous-item 1</a></li>
+					<li><a href="#">Sous-item 2</a></li>
+					<li><a href="#">Sous-item 3</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Item 3</a></li>
+		</ul>
+	</nav>
+				</textarea>
+
 			</article>
 
 			<!-- input -->
