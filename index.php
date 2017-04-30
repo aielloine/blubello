@@ -36,7 +36,7 @@
 
 
 			<!-- contenu de tout le site -->
-		<div class="content">
+		<div class="wrapper">
 
 			<h1>Bublello php and css framework</h1>
 
