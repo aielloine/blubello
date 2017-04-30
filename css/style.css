@@ -60,6 +60,29 @@ body, html{
   background-color: var(--main-text-color);
   outline: 1px solid var(--main-bg-color);
 }
+
+
+/*//////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////// ANIMATIONS ///// ////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////*/
+
+@keyframes rebond {
+  0% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(25px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  75% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
 /*//////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////// TITRES ///// ////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////*/
@@ -258,7 +281,62 @@ article{
 }
 
 /*//////////////////////////////////////////////////////////////////////////////////////
-//////////////////////////// SELECT ////////////////////////////////////////////////////
+//////////////////////////// MENU //////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////*/
+
+nav {
+  z-index: 10000;
+  top: 0;
+  min-width: 100%;
+  background: var(--title-text-color);
+  height: auto;
+}
+nav ul {
+
+  filter: url("#goo");
+  margin:0;
+  padding:0;
+  list-style-type:none;
+  text-align:center;
+}
+nav li {
+  float:left;
+  margin:auto;
+  padding:0;
+  background-color: var(--title-text-color);
+ }
+nav li a {
+  display:block;
+  color:var(--main-bg-color);
+  text-decoration:none;
+  padding:20px;
+}
+nav li a:hover {
+  background: var(--other-bg-color);
+ }
+nav ul li ul {
+  max-height: 0;
+  overflow: hidden;
+  transition: all .4s;
+}
+nav ul li:hover ul {
+  max-height: 100vh;
+  animation: rebond .6s;
+}
+nav li ul li {
+  float:none;
+}
+nav li ul {
+  position:absolute;
+}
+nav ul li ul li ul {
+  max-height: 100vh;
+  overflow:auto;
+  transition: all .4s;
+  margin-left: 50vw;
+}
+/*//////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////// SELECT //////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////*/
 
 /*selects customs par default*/
@@ -450,6 +528,7 @@ article{
   background: transparent;
   background-size: cover;
   display: block;
+  background-position: center;
 }
 .img.grayscale{
   filter: grayscale(100%);
